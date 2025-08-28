@@ -1,0 +1,20 @@
+[project]
+name = "bodacious"
+version = "0.1.0"
+license = "MPL-2.0"
+description = "A fresh approach to tabular feature engineering for machine learning pipelines, based on polars expressions"
+readme = "README.md"
+authors = [
+    { name = "Adam Sardar", email = "adam@sardar.me.uk" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "polars>=1.31.0",
+]
+
+[project.scripts]
+bodacious = "bodacious:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
