@@ -1,5 +1,7 @@
+[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+[![stability-alpha](https://img.shields.io/badge/stability-alpha-f4d03f.svg)](https://github.com/mkenney/software-guides/blob/master/STABILITY-BADGES.md#alpha)
 
-THIS PROJECT IS IN PRE-ALPHA
+THIS PROJECT IS IN ALPHA
 
 I'm just playing with some ideas. Maybe it'll become something?
 
