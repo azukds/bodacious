@@ -37,7 +37,7 @@ print(mean_imputation_exprs)
 print("Unmodified frame:")
 print(penguins_pl)
 
-print("Null values imputed:")
+print("Null values imputed for only numeric columns:")
 print(penguins_pl.with_columns(mean_imputation_exprs))
 ```
 
@@ -66,7 +66,7 @@ shape: (344, 8)
 │ Chinstrap ┆ Dream     ┆ 50.2         ┆ 18.7         ┆ 198.0        ┆ 3775.0      ┆ female ┆ 2009 │
 └───────────┴───────────┴──────────────┴──────────────┴──────────────┴─────────────┴────────┴──────┘
 
-Null values imputed:
+Null values imputed for only numeric columns:
 shape: (344, 8)
 ┌───────────┬───────────┬──────────────┬─────────────┬─────────────┬─────────────┬────────┬────────┐
 │ species   ┆ island    ┆ bill_length_ ┆ bill_depth_ ┆ flipper_len ┆ body_mass_g ┆ sex    ┆ year   │
