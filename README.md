@@ -22,14 +22,14 @@ for use in the future before loading them back in and applying them independentl
 
 What if I told you about a library that:
 
-- [was expressive and powerful]([url](https://docs.pola.rs/api/python/stable/reference/)) in its API
-- [parallised by design]([url](https://docs.pola.rs/user-guide/misc/multiprocessing/)), with all the power of rust to prevent making copies unnecessarily
-- could be [run on GPU]([url](https://docs.pola.rs/user-guide/lazy/gpu/)) if you needed it
-- could [produce a feature computation DAG](https://docs.pola.rs/user-guide/lazy/query-plan/) for lineage, with [query opitimsation]([url](https://docs.pola.rs/user-guide/lazy/optimizations/)) by default
-- could [serialise]([url](https://docs.pola.rs/api/python/dev/reference/expressions/api/polars.Expr.meta.serialize.html#polars.Expr.meta.serialize)) to json and [read back]([url](https://docs.pola.rs/api/python/dev/reference/expressions/api/polars.Expr.deserialize.html#polars.Expr.deserialize)) in losslessly
-- has a stable definition of missing values and [types]([url](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.dtypes.html))
-- was extremely memory efficient when using [lazy frames]([url](https://docs.pola.rs/py-polars/html/reference/lazyframe/index.html))
-- implemented the cross-language [arrow spec]([url](https://docs.pola.rs/user-guide/misc/arrow/)), so it isn't just charging off to create a new standard
+- [was expressive and powerful](https://docs.pola.rs/api/python/stable/reference/) in its API
+- [parallised by design](https://docs.pola.rs/user-guide/misc/multiprocessing) with all the power of rust to prevent making copies unnecessarily
+- could be [run on GPU](https://docs.pola.rs/user-guide/lazy/gpu/) if you needed it
+- could [produce a feature computation DAG](https://docs.pola.rs/user-guide/lazy/query-plan/) for lineage, with [query opitimsation](https://docs.pola.rs/user-guide/lazy/optimizations/) by default
+- could [serialise](https://docs.pola.rs/api/python/dev/reference/expressions/api/polars.Expr.meta.serialize.html#polars.Expr.meta.serialize) to json and [read back](https://docs.pola.rs/api/python/dev/reference/expressions/api/polars.Expr.deserialize.html#polars.Expr.deserialize) in losslessly
+- has a stable definition of missing values and [types](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.dtypes.html)
+- was extremely memory efficient when using [lazy frames](https://docs.pola.rs/py-polars/html/reference/lazyframe/index.html)
+- implemented the cross-language [arrow spec](https://docs.pola.rs/user-guide/misc/arrow/), so it isn't just charging off to create a new standard
 
 
 You'd say "what is this mana from heaven!?". Polars is the future of tabular data analysis in Python. However, it can become awkward when one wants to change a table
