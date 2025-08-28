@@ -11,7 +11,7 @@ _Surfer slang:_
 
 > extremely good, extremely great
 
-A fresh approach to tabular feature engineering for machine learning pipelines.
+A fresh approach to tabular feature engineering for machine learning pipelines, based on polars expressions.
 
 Construct your, potentially stateful, polars expressions using bodacious functions before
 using them in plain polars [contexts](https://docs.pola.rs/user-guide/concepts/expressions-and-contexts/#contexts). You
