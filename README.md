@@ -88,5 +88,7 @@ shape: (344, 8)
 └───────────┴───────────┴──────────────┴─────────────┴─────────────┴─────────────┴────────┴────────┘
 ```
 
+### Further Reading:
 
+- [We Have Expressions at Home](https://www.dontusethiscode.com/blog/2025-06-18_expressions_at_home.html) - hammers home that expressions define 'how' to perform an operation, separately to the frame in question.
 
