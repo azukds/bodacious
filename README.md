@@ -18,6 +18,24 @@ using them in plain polars [contexts](https://docs.pola.rs/user-guide/concepts/e
 could even [export them as plain json](https://docs.pola.rs/api/python/stable/reference/expressions/api/polars.Expr.meta.serialize.html#polars.Expr.meta.serialize) 
 for use in the future before loading them back in and applying them independently of bodacious (they are just plain old polars expressions).
 
+## Motivation
+
+What if I told you about a library that:
+
+- [was expressive and powerful]([url](https://docs.pola.rs/api/python/stable/reference/)) in its API
+- [parallised by design]([url](https://docs.pola.rs/user-guide/misc/multiprocessing/)), with all the power of rust to prevent making copies unnecessarily
+- could be [run on GPU]([url](https://docs.pola.rs/user-guide/lazy/gpu/)) if you needed it
+- could [produce a feature computation DAG](https://docs.pola.rs/user-guide/lazy/query-plan/) for lineage, with [query opitimsation]([url](https://docs.pola.rs/user-guide/lazy/optimizations/)) by default
+- could [serialise]([url](https://docs.pola.rs/api/python/dev/reference/expressions/api/polars.Expr.meta.serialize.html#polars.Expr.meta.serialize)) to json and [read back]([url](https://docs.pola.rs/api/python/dev/reference/expressions/api/polars.Expr.deserialize.html#polars.Expr.deserialize)) in losslessly
+- has a stable definition of missing values and [types]([url](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.dtypes.html))
+- was extremely memory efficient when using [lazy frames]([url](https://docs.pola.rs/py-polars/html/reference/lazyframe/index.html))
+- implemented the cross-language [arrow spec]([url](https://docs.pola.rs/user-guide/misc/arrow/)), so it isn't just charging off to create a new standard
+
+
+You'd say "what is this mana from heaven!?". Polars is the future of tabular data analysis in Python. However, it can become awkward when one wants to change a table
+based on state derived from another table, which is common in machine learning pipelines. Data leakage is easy to do. `bodacious` is here to help, providing helper functions
+that can be used on your training data, and then applied seperately to new predictions without reference to anything other than a pure polars object - the expression.
+
 ## Example
 
 ```python
